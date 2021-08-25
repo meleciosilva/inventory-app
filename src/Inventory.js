@@ -4,7 +4,7 @@ function Inventory({ items, handleAdd }) {
     <div>
       { items.map((item, index) => (
         <div className='myStyle' key={index}>
-          <p style={{ paddingRight: '15px' }}>{item}</p>
+          <p>{item}</p>
           <button onClick={() => handleAdd(item)}>Add to Cart</button>
         </div>
       )) }
